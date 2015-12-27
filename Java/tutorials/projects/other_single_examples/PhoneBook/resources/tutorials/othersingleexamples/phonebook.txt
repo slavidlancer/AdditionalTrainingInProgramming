@@ -1,0 +1,11 @@
+name01 second_name01|town01|4123567890
+name02 second_name02|town01|1234567890
+name03 second_name03|town02|6123457890
+name04 second_name04|town01|6123457890
+name05 second_name05|town03|9123456780
+name06 second_name06|town01|5912346780
+name07 second_name07|town01|4123567890
+name08 second_name08|town02|5123467890
+name09 second_name09|town01|3412567890
+name10 second_name10|town01|8612345790
+name11 second_name11|town03|4578901236

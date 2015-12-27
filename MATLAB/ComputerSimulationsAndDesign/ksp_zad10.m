@@ -1,0 +1,50 @@
+clc
+clear
+load data10a.txt;
+load data10b.txt;
+ya=data10a;
+yb=data10b;
+md=1000;
+[yar,yas]=size(ya);
+[ybr,ybs]=size(yb);
+ta=0:0.0005:(yar-1)*0.0005;
+tb=0:0.0005:(ybr-1)*0.0005;
+t=0:0.0005:79*0.0005;
+plot(tb,yb,'-')
+pause
+ys1=etfe(yb,20);
+bodeplot(ys1)
+[bx,by]=ginput(3)
+hzp1=bx(1)/0.0005/(2*pi)
+hzp2=bx(2)/0.0005/(2*pi)
+hzp3=bx(3)/0.0005/(2*pi)
+ys2=spa(yb,85);
+bodeplot(ys2)
+pause
+kp=ya(1:80,1)
+for i=1:1:40
+	k=yb(i:(i+79),1);
+	r=kp-k;
+	ri=r(60:80,1);
+	di=std(ri)^2;
+	if di<md
+		md=di;
+		dski=i;
+	end
+end
+k2=yb(dski:(dski+79),1);
+r=kp-k2;
+t=0:0.0005:79*0.0005;
+plot(t,r)
+[a1x,a1y]=ginput(1);
+[a2x,a2y]=ginput(1);
+[a3x,a3y]=ginput(1);
+a1=abs(a1y)
+a2=abs(a2y)
+a3=abs(a3y)
+yp=etfe(r,20);
+bodeplot(yp)
+[w,wy]=ginput(1)
+tvk=w^(-1)
+ksi=log10(a1/a3)/tvk
+theta=a1/a2

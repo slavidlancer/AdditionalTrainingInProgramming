@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1292530570 source:/home/slavi/Документи/hello/main.c
+	<avr/io.h>
+	<util/delay.h>
+	<stdio.h>
+
+1292712910 source:/home/slavi/Документи/mcu/hello/main.c
+	<avr/io.h>
+	<util/delay.h>
+	<stdio.h>
+

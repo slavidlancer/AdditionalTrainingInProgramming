@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0E7E060B-BC2D-42A7-8251-10324276E12A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DAREintegraTiOn</RootNamespace>
+    <AssemblyName>DAREintegraTiOn</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Core\Creator.cs" />
+    <Compile Include="Core\Engine\EngineLoveUnderWill.cs" />
+    <Compile Include="Core\Exceptions\ExampleException.cs" />
+    <Compile Include="Core\Generator\CreatorFactory.cs" />
+    <Compile Include="Core\Law.cs" />
+    <Compile Include="Core\Exceptions\NameException.cs" />
+    <Compile Include="Core\Laws\MinorLaw.cs" />
+    <Compile Include="Core\Laws\SimpleLaw.cs" />
+    <Compile Include="Core\Laws\MajorLaw.cs" />
+    <Compile Include="Core\Laws\PhysicalLaw.cs" />
+    <Compile Include="DAREintegraTiOn.cs" />
+    <Compile Include="Global\ErrorMessages.cs" />
+    <Compile Include="Global\Validator.cs" />
+    <Compile Include="Interfaces\Core\ISystem.cs" />
+    <Compile Include="Interfaces\Models\Structure\Elementals\IAir.cs" />
+    <Compile Include="Interfaces\Models\Structure\IAngel.cs" />
+    <Compile Include="Interfaces\Models\IAngelObject.cs" />
+    <Compile Include="Interfaces\Models\Objects\Beings\IAnimal.cs" />
+    <Compile Include="Interfaces\IAstral.cs" />
+    <Compile Include="Interfaces\Models\IBeingObject.cs" />
+    <Compile Include="Interfaces\Models\Objects\IConstellation.cs" />
+    <Compile Include="Interfaces\Core\ICreator.cs" />
+    <Compile Include="Interfaces\Core\Generator\ICreatorFactory.cs" />
+    <Compile Include="Interfaces\Models\ICreature.cs" />
+    <Compile Include="Interfaces\Models\Structure\Elementals\IEarth.cs" />
+    <Compile Include="Interfaces\Models\IElementalObject.cs" />
+    <Compile Include="Interfaces\Core\Engine\IEngine.cs" />
+    <Compile Include="Interfaces\Models\Structure\Elementals\IFire.cs" />
+    <Compile Include="Interfaces\Models\Objects\IGalaxy.cs" />
+    <Compile Include="Interfaces\Models\Objects\Beings\IHuman.cs" />
+    <Compile Include="Interfaces\Core\ILaw.cs" />
+    <Compile Include="Interfaces\Core\Laws\IMinorLaw.cs" />
+    <Compile Include="Interfaces\Models\IPhysicalPlane.cs" />
+    <Compile Include="Interfaces\Models\IMentalPlane.cs" />
+    <Compile Include="Interfaces\Models\IAstralPlane.cs" />
+    <Compile Include="Interfaces\Core\Laws\ISimpleLaw.cs" />
+    <Compile Include="Interfaces\Core\Laws\IMajorLaw.cs" />
+    <Compile Include="Interfaces\IMental.cs" />
+    <Compile Include="Interfaces\Models\Objects\Beings\IMineral.cs" />
+    <Compile Include="Interfaces\IPhantom.cs" />
+    <Compile Include="Interfaces\IPhysical.cs" />
+    <Compile Include="Interfaces\Core\Laws\IPhysicalLaw.cs" />
+    <Compile Include="Interfaces\Models\Objects\IPlanet.cs" />
+    <Compile Include="Interfaces\Models\Objects\Beings\IPlant.cs" />
+    <Compile Include="Interfaces\Renderer\IRenderer.cs" />
+    <Compile Include="Interfaces\Models\ISizesMeasures.cs" />
+    <Compile Include="Interfaces\Models\Objects\ISolarSystem.cs" />
+    <Compile Include="Interfaces\Models\Structure\ISpiritusDirectorum.cs" />
+    <Compile Include="Interfaces\Models\ISpiritusDirectorumObject.cs" />
+    <Compile Include="Interfaces\Models\Objects\IStar.cs" />
+    <Compile Include="Interfaces\Models\IStarObject.cs" />
+    <Compile Include="Interfaces\ITheAbsoluteInexplicitPrimeCause.cs" />
+    <Compile Include="Interfaces\Models\Objects\IUniverse.cs" />
+    <Compile Include="Interfaces\Models\Structure\Elementals\IWater.cs" />
+    <Compile Include="Interfaces\Models\IWorld.cs" />
+    <Compile Include="Models\AngelObject.cs" />
+    <Compile Include="Models\AstralPlane.cs" />
+    <Compile Include="Models\BeingObject.cs" />
+    <Compile Include="Models\ColorType.cs" />
+    <Compile Include="Models\Creature.cs" />
+    <Compile Include="Models\ElementalObject.cs" />
+    <Compile Include="Models\GenderType.cs" />
+    <Compile Include="Models\MentalPlane.cs" />
+    <Compile Include="Models\Objects\Beings\Animal.cs" />
+    <Compile Include="Models\Objects\Constellation.cs" />
+    <Compile Include="Models\Objects\Galaxy.cs" />
+    <Compile Include="Models\Objects\Beings\Human.cs" />
+    <Compile Include="Models\Objects\Beings\Mineral.cs" />
+    <Compile Include="Models\Objects\Planet.cs" />
+    <Compile Include="Models\Objects\Beings\Plant.cs" />
+    <Compile Include="Models\Objects\SolarSystem.cs" />
+    <Compile Include="Models\Objects\Star.cs" />
+    <Compile Include="Models\Objects\Zodiacus.cs" />
+    <Compile Include="Models\PhysicalPlane.cs" />
+    <Compile Include="Models\SizesMeasures.cs" />
+    <Compile Include="Models\SpiritusDirectorumObject.cs" />
+    <Compile Include="Models\StarObject.cs" />
+    <Compile Include="Models\Objects\Universe.cs" />
+    <Compile Include="Models\Structure\Angel.cs" />
+    <Compile Include="Models\Structure\Elementals\Air.cs" />
+    <Compile Include="Models\Structure\Elementals\Earth.cs" />
+    <Compile Include="Models\Structure\Elementals\Fire.cs" />
+    <Compile Include="Models\Structure\Elementals\Water.cs" />
+    <Compile Include="Models\Structure\SpiritusDirectorum.cs" />
+    <Compile Include="Models\World.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Renderer\RenderMachine.cs" />
+    <Compile Include="TheAbsoluteInexplicitPrimeCause.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Utils\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

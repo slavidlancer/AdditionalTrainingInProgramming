@@ -1,0 +1,15 @@
+# depslib dependency file v1.0
+1302288065 source:/home/slavi/Документи/file01/main.c
+	<stdio.h>
+	<stdlib.h>
+	"file.h"
+
+1302288117 source:/home/slavi/Документи/file01/file.c
+	<stdio.h>
+	"main.h"
+	"file.h"
+
+1302288072 /home/slavi/Документи/file01/main.h
+
+1302287323 /home/slavi/Документи/file01/file.h
+

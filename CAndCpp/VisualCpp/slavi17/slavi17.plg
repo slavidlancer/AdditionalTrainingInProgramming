@@ -1,0 +1,22 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: slavi17 - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x402 /fo"Debug/slavi17.res" /d "_DEBUG" /d "_AFXDLL" "D:\tasks\aiut_kump\bakalavar\IV\1\ppo\slavi17\slavi17.rc"" 
+Creating command line "link.exe /nologo /subsystem:windows /incremental:yes /pdb:"Debug/slavi17.pdb" /debug /machine:I386 /out:"Debug/slavi17.exe" /pdbtype:sept  .\Debug\SdDlg.obj .\Debug\slavi17.obj .\Debug\slavi17Dlg.obj .\Debug\StdAfx.obj .\Debug\slavi17.res "
+<h3>Output Window</h3>
+Compiling resources...
+Linking...
+LINK : LNK6004: Debug/slavi17.exe not found or not built by the last incremental link; performing full link
+
+
+
+<h3>Results</h3>
+slavi17.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

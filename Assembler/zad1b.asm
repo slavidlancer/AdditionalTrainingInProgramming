@@ -1,0 +1,15 @@
+mov 3,#15
+mov 4,#20
+mov 5,#20
+mov 6,#20
+mov a,4
+add a,6
+mov 12,a
+mov a,#0
+addc a,#0
+mov a,3
+add a,5
+mov 11,a
+mov a,#0
+addc a,#0
+mov 10,a

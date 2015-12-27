@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1300544829 source:/home/slavi/Документи/tutorial2/main.cpp
+	<iostream>
+
+1300547089 source:/home/slavi/Документи/tutorial2/class.cpp
+	<string>
+

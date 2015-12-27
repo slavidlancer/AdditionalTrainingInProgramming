@@ -1,0 +1,5 @@
+upravlenie na cifrov izhod
+1.realizirane na migane f = 1 Hz
+2.prez 1 s zelen/cherven - smqna
+3.prez 2 s zelen/jalt/cherven, 1 s - nishto da ne sveti, loop
+4.chrez tochno opr. na izminaloto vreme (bez delay) - 1, 2, 3

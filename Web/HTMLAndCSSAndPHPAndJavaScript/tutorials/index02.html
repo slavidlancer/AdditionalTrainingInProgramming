@@ -1,0 +1,133 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>title</title>
+<link rel="stylesheet" type="text/css" href="style.css"/>
+<script type="text/javascript">
+<!--
+function checkForm()
+{
+	var fname="fname";
+
+	if(document.getElementById("firstname2").innerHTML==fname)
+	{
+		return true;
+	}
+	else if(document.getElementById("select2")=="option1")
+	{
+		return false;
+	}
+}
+
+function messageTryCatch()
+{
+	try
+	{
+		var th=false;
+
+//		alert("welcome");
+		if(th)
+		{
+			throw "error";
+		}
+		err;
+	}
+	catch(err)
+	{
+		var txtArray=new Array();
+
+		if(err=="error")
+		{
+			document.location.href="index03.html";
+		}
+		else
+		{
+			txtArray[0]="There was an error on this page.\n\n";
+			txtArray[1]="Error description: " + err.description + "\n\n";
+			txtArray[2]="Click OK to continue.\n\n";
+			if(!confirm(txtArray[0]+txtArray[1]+txtArray[2]))
+			{
+				document.location.href="index01.html";
+			}
+		}
+	}
+}
+
+function checkFunc()
+{
+	vart="HTML";
+	vartl=vart.length;
+	document.getElementById("txt").innerHTML=vart.toLowerCase()+"\ncount:"+vartl;
+}
+
+function goToIndex01()
+{
+	document.location.href="index01.html";
+}
+//-->
+</script>
+</head>
+<body>
+
+<form name="input" action="prog.php" method="get" onsubmit="return checkForm()">
+first name:
+<input type="text" id="firstname2" name="firstname" size="50" maxlength="50"/><br/>
+last name:
+<input type="text" name="lastname" size="50" maxlength="50"/><br/>
+password:
+<input type="password" name="password" size="20" maxlength="20"/>
+<hr/>
+<p class="center">p class</p>
+<p class="lc">CLASS</p>
+<a id="parameter">city:</a>
+<pre>
+<input type="radio" name="city" value="a"  checked="checked"/>city01
+<br/>
+<input type="radio" name="city" value="b"/>city02
+<br/>
+<input type="radio" name="city" value="c"/>city03
+</pre>
+<hr/>
+<select id="select2" name="select">
+<option>option01</option>
+<option>option02</option>
+<option>option03</option>
+<option selected="selected">option04</option>
+</select>
+<hr/>
+<input type="checkbox" name="check" value="1"/>check01
+<br/>
+<input type="checkbox" name="check" value="2"/>check02
+<br/>
+<input type="checkbox" name="check" value="3"/>check03
+<br/>
+<textarea id="txt" name="text"></textarea>
+<input type="button" value="checkFunc()" onclick="checkFunc()"/>
+<input type="reset" value="reset"/>
+<input type="submit" value="submit"/>
+</form>
+
+<iframe src="index03.html" name="frame" width="200" height="200" frameborder="0"></iframe>
+<a href="index03.html" title="next" target="frame">index03.html</a>
+<br/>
+
+<a href="index01.html" title="previous">index01.html</a>
+<button value="index01.html" title="previous" onclick="goToIndex01()">index01</button>
+<a href="index03.html" title="next">index03.html</a>
+<p><a href="mailto:mail@mail.com" title="send e-mail">e-mail</a></p>
+<button type="button" onclick="messageTryCatch()">messageTryCatch()</button>
+<p>javascript :
+<script type="text/javascript">
+<!--
+/*var str="w3schools.com";
+var pattern=/schools/gi;*/
+
+	document.write("script: "+navigator.appCodeName+" "+navigator.appVersion);//"+pattern);
+//-->
+</script>
+<noscript>no script support</noscript>
+</p>
+
+</body>
+</html>

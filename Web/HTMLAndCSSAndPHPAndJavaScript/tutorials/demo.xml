@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE NOTE SYSTEM "Note.dtd">
+<note>
+	<from>from</from>
+	<to>to</to>
+	<subject>subject</subject>
+	<message>text</message>
+</note>

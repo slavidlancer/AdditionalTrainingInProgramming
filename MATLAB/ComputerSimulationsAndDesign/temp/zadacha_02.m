@@ -1,0 +1,10 @@
+clc
+clear
+n=input('n=')
+x=input('x=')
+p=1:1:n
+x2=x.^p
+r2=x2./cumprod(1:n)
+r=1+sum(r2)
+e=exp(x)
+d=abs(r-e)

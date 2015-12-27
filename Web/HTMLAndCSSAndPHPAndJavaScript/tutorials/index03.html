@@ -1,0 +1,128 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>title</title>
+<link rel="stylesheet" type="text/css" href="style2.css">
+<script type="text/javascript" src="script.js"></script>
+<script type="text/javascript">
+<!--
+function displayDate()
+{
+	document.getElementById("demo").innerHTML=Date();
+}
+
+function example()
+{
+	var d=new Date();
+	var t=d.getMinutes();
+
+	if(t>10)
+	{
+		document.write("<b>hello</b>");
+		document.write("</br>");
+	}
+}
+
+function displayTextFunc()
+{
+	var y="hi";
+	document.getElementById("demo2").innerHTML=y;
+}
+
+function displayBoxAlert()
+{
+	alert("displayBoxAlert()");
+}
+
+function displayBoxConfirm()
+{
+	var r=confirm("press a button");
+
+	if(r)
+	{
+		alert("ok");
+	}
+	else
+	{
+		alert("cancel");
+	}
+}
+
+function displayBoxPrompt()
+{
+	var v=prompt("enter","value");
+
+	if((v!=null)&&(v!=""))
+	{
+		alert("hello, "+v);
+	}
+}
+
+function forIn()
+{
+	var person={fname:"fname",lname:"lname",city:0};
+
+	for (x in person)
+	{
+		document.write(person[x]+" ");
+	}
+}
+
+if(window.XMLHttpRequest)
+{
+	xmlhttp=new XMLHttpRequest();
+}
+
+xmlhttp.open("GET","demo.xml",false);
+xmlhttp.send();
+xmlDoc=xmlhttp.responseXML;
+//-->
+</script>
+</head>
+<body>
+text
+<ul>
+<li><a href="index01.html" title="menu01">index01.html</a>
+<ul class="index">
+<li>index01</li>
+<li>html</li>
+</ul>
+</li>
+<li><a href="index02.html" title="menu02">index02.html</a></li>
+<li><a href="index03.html" title="menu03">index03.html</a></li>
+<li><a href="index04.html" title="menu04">index04.html</a></li>
+</ul>
+<p>
+text
+</p>
+<div class="img">
+<a target="_blank" href="index01.html"><img src="img/back.png" alt="index01.html" width="110" height="90"/></a>
+<div class="desc">index01.html description</div>
+</div>
+<div class="img">
+<a target="_blank" href="index02.html"><img src="img/pic.png" alt="index02.html" width="110" height="90" style="opacity:0.50" onmouseover="this.style.opacity=0.90" onmouseout="this.style.opacity=0.50"/></a>
+<div class="desc">index02.html description</div>
+</div>
+<div class="webd">
+<img class="web"/>
+</div>
+<div class ="nonediv" lang="ch" xml:lang="ch">hi</div>
+<p id="demo">default</p>
+<button type="button" onclick="displayDate()">displayDate()</button>
+<p id="demo2"></p>
+<script type="text/javascript">
+<!--
+	document.getElementById("demo2").innerHTML=Date();
+	example();
+	forIn();
+	document.write("</br>");
+//-->
+</script>
+<button type="button" onclick="displayTextFunc()">displayTextFunc()</button>
+</br>
+<input type="button" onclick="displayBoxAlert()" value="displayBoxAlert()"/>
+<input type="button" onclick="displayBoxConfirm()" value="displayBoxConfirm()"/>
+<input type="button" onclick="displayBoxPrompt()" value="displayBoxPrompt()"/>
+</body>
+</html>

@@ -1,0 +1,377 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Bulgarian resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_BGR)
+#ifdef _WIN32
+LANGUAGE LANG_BULGARIAN, SUBLANG_DEFAULT
+#pragma code_page(1251)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\slavi24.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\slavi24.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DIALOG1 DIALOG DISCARDABLE  0, 0, 292, 164
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Parameters"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,25,131,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,219,131,50,14
+    LTEXT           "a=",IDC_STATIC,20,23,12,10
+    LTEXT           "b=",IDC_STATIC,20,41,10,10
+    LTEXT           "c=",IDC_STATIC,20,59,12,11
+    EDITTEXT        IDC_EDIT1,33,21,66,15,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT2,33,38,66,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT3,33,56,66,13,ES_AUTOHSCROLL
+END
+
+IDD_DIALOG2 DIALOG DISCARDABLE  0, 0, 237, 130
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Calc"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,26,100,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,167,100,50,14
+    LTEXT           "text",IDC_st,21,50,197,35
+    LTEXT           "x=",IDC_STATIC,17,18,10,9
+    EDITTEXT        IDC_EDIT1,30,16,51,14,ES_AUTOHSCROLL
+END
+
+IDD_DIALOG3 DIALOG DISCARDABLE  0, 0, 245, 127
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Grad"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,21,100,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,175,100,50,14
+    LTEXT           "text",IDC_STA,29,25,144,21
+    LTEXT           "x=",IDC_STATIC,28,56,10,9
+    EDITTEXT        IDC_EDIT1,37,55,54,12,ES_AUTOHSCROLL
+    LTEXT           "to4nost=",IDC_STATIC,103,56,29,11
+    EDITTEXT        IDC_EDIT2,133,54,48,13,ES_AUTOHSCROLL
+    CONTROL         "One Direction",IDC_RADIO1,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,28,75,63,10
+    CONTROL         "Two Direction",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON,
+                    103,75,78,10
+END
+
+IDD_DIALOG4 DIALOG DISCARDABLE  0, 0, 202, 105
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Scan"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,17,75,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,137,75,50,14
+    LTEXT           "a=",IDC_STATIC,16,14,11,11
+    EDITTEXT        IDC_EDIT1,31,13,51,13,ES_AUTOHSCROLL
+    LTEXT           "b=",IDC_STATIC,16,34,16,10
+    EDITTEXT        IDC_EDIT2,31,33,52,12,ES_AUTOHSCROLL
+    LTEXT           "to4nost",IDC_STATIC,101,25,27,10
+    EDITTEXT        IDC_EDIT3,129,23,46,13,ES_AUTOHSCROLL
+END
+
+IDD_DIALOG5 DIALOG DISCARDABLE  0, 0, 265, 122
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Simplex"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,18,92,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,161,92,50,14
+    LTEXT           "na4alna to4ka",IDC_STATIC,20,14,50,11
+    LTEXT           "na4alna stapka",IDC_STATIC,19,38,51,10
+    LTEXT           "to4nost",IDC_STATIC,155,27,28,13
+    EDITTEXT        IDC_EDIT1,75,15,46,15,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT2,75,36,46,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT3,185,25,53,15,ES_AUTOHSCROLL
+    CONTROL         "uveli4avane na x",IDC_RADIO1,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP,85,57,85,10
+    CONTROL         "namalqvane na x",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON,
+                    85,74,83,11
+    LTEXT           "na4alna posoka na tarsene kam",IDC_STATIC,25,61,55,18
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_DIALOG1, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 285
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 157
+    END
+
+    IDD_DIALOG2, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 230
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 123
+    END
+
+    IDD_DIALOG3, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 238
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 120
+    END
+
+    IDD_DIALOG4, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 195
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 98
+    END
+
+    IDD_DIALOG5, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 258
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 115
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU1 MENU DISCARDABLE 
+BEGIN
+    MENUITEM "Parameters",                  ID_PARAMETERS
+    POPUP "Basic"
+    BEGIN
+        MENUITEM "Calc",                        ID_BASIC_CALC
+        MENUITEM "Grad",                        ID_BASIC_GRAD
+        MENUITEM "Radicals",                    ID_BASIC_RADICALS
+    END
+    POPUP "Optimization"
+    BEGIN
+        MENUITEM "Scan",                        ID_OPTIMIZATION_SCAN
+        MENUITEM "Simplex",                     ID_OPTIMIZATION_SIMPLEX
+    END
+    MENUITEM "Exit",                        ID_EXIT
+END
+
+#endif    // Bulgarian resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About slavi24"
+FONT 8, "MS Sans Serif"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "slavi24 Version 1.0",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2009",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "OK",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_SLAVI24_DIALOG DIALOGEX 0, 0, 286, 126
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "slavi24"
+MENU IDR_MENU1
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "text",IDC_rez,13,13,149,14
+    LTEXT           "Static",IDC_stat,66,46,141,28
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "slavi24 MFC Application\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "slavi24\0"
+            VALUE "LegalCopyright", "Copyright (C) 2009\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "slavi24.EXE\0"
+            VALUE "ProductName", "slavi24 Application\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_SLAVI24_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 279
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 119
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "&About slavi24..."
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\slavi24.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

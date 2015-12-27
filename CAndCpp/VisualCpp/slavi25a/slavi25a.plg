@@ -1,0 +1,27 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: slavi25a - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\Slavi\LOCALS~1\Temp\RSP132.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Debug/slavi25a.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"D:\tasks\aiut_kump\bakalavar\IV\1\ppo\slavi25a\slavi25aDlg.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Slavi\LOCALS~1\Temp\RSP132.tmp" 
+Creating command line "link.exe /nologo /subsystem:windows /incremental:yes /pdb:"Debug/slavi25a.pdb" /debug /machine:I386 /out:"Debug/slavi25a.exe" /pdbtype:sept  .\Debug\slavi25a.obj .\Debug\slavi25aDlg.obj .\Debug\StdAfx.obj .\Debug\slavi25a.res "
+<h3>Output Window</h3>
+Compiling...
+slavi25aDlg.cpp
+Linking...
+
+
+
+<h3>Results</h3>
+slavi25a.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

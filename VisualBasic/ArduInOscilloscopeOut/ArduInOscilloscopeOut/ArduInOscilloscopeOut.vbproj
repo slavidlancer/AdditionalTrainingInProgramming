@@ -1,0 +1,382 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{02E2DBB1-006B-437C-9350-D380EA093FE9}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>ArduInOscilloscopeOut.My.MyApplication</StartupObject>
+    <RootNamespace>ArduInOscilloscopeOut</RootNamespace>
+    <AssemblyName>ArduInOscilloscopeOut</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <PublishUrl>http://localhost/ArduInOscilloscopeOut/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.1.0</ApplicationVersion>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>ArduInOscilloscopeOut.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>ArduInOscilloscopeOut.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Icon_ArduInOscilloscopeOut.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Sharpduino, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\temp\sharpduino\Sharpduino\bin\Debug\Sharpduino.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About.Designer.vb">
+      <DependentUpon>About.vb</DependentUpon>
+    </Compile>
+    <Compile Include="About.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_AI0.Designer.vb">
+      <DependentUpon>Form_AI0.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_AI0.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_AI1.Designer.vb">
+      <DependentUpon>Form_AI1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_AI1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_AI2.Designer.vb">
+      <DependentUpon>Form_AI2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_AI2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_AI3.Designer.vb">
+      <DependentUpon>Form_AI3.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_AI3.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_AI4.Designer.vb">
+      <DependentUpon>Form_AI4.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_AI4.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_AI5.Designer.vb">
+      <DependentUpon>Form_AI5.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_AI5.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Connect.Designer.vb">
+      <DependentUpon>Form_Connect.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Connect.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_DI0.Designer.vb">
+      <DependentUpon>Form_DI0.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_DI0.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_DI1.Designer.vb">
+      <DependentUpon>Form_DI1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_DI1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_DI10.Designer.vb">
+      <DependentUpon>Form_DI10.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_DI10.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_DI11.Designer.vb">
+      <DependentUpon>Form_DI11.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_DI11.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_DI12.Designer.vb">
+      <DependentUpon>Form_DI12.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_DI12.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_DI13.Designer.vb">
+      <DependentUpon>Form_DI13.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_DI13.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_DI2.Designer.vb">
+      <DependentUpon>Form_DI2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_DI2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_DI3.Designer.vb">
+      <DependentUpon>Form_DI3.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_DI3.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_DI4.Designer.vb">
+      <DependentUpon>Form_DI4.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_DI4.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_DI5.Designer.vb">
+      <DependentUpon>Form_DI5.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_DI5.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_DI6.Designer.vb">
+      <DependentUpon>Form_DI6.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_DI6.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_DI7.Designer.vb">
+      <DependentUpon>Form_DI7.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_DI7.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_DI8.Designer.vb">
+      <DependentUpon>Form_DI8.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_DI8.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_DI9.Designer.vb">
+      <DependentUpon>Form_DI9.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_DI9.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main_Form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main_Form.Designer.vb">
+      <DependentUpon>Main_Form.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="About.resx">
+      <DependentUpon>About.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_AI0.resx">
+      <DependentUpon>Form_AI0.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_AI1.resx">
+      <DependentUpon>Form_AI1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_AI2.resx">
+      <DependentUpon>Form_AI2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_AI3.resx">
+      <DependentUpon>Form_AI3.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_AI4.resx">
+      <DependentUpon>Form_AI4.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_AI5.resx">
+      <DependentUpon>Form_AI5.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Connect.resx">
+      <DependentUpon>Form_Connect.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_DI0.resx">
+      <DependentUpon>Form_DI0.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_DI1.resx">
+      <DependentUpon>Form_DI1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_DI10.resx">
+      <DependentUpon>Form_DI10.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_DI11.resx">
+      <DependentUpon>Form_DI11.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_DI12.resx">
+      <DependentUpon>Form_DI12.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_DI13.resx">
+      <DependentUpon>Form_DI13.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_DI2.resx">
+      <DependentUpon>Form_DI2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_DI3.resx">
+      <DependentUpon>Form_DI3.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_DI4.resx">
+      <DependentUpon>Form_DI4.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_DI5.resx">
+      <DependentUpon>Form_DI5.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_DI6.resx">
+      <DependentUpon>Form_DI6.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_DI7.resx">
+      <DependentUpon>Form_DI7.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_DI8.resx">
+      <DependentUpon>Form_DI8.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_DI9.resx">
+      <DependentUpon>Form_DI9.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main_Form.resx">
+      <DependentUpon>Main_Form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Icon_ArduInOscilloscopeOut.ico" />
+    <None Include="Resources\ArduInOscilloscopeOut_instructions.txt" />
+    <None Include="Resources\GNU_GPL_v3.0.rtf" />
+    <None Include="Resources\GNU_GPL_v3.0.txt" />
+    <None Include="Resources\ArduinoUno_R3_Front.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,18 @@
+avr-gcc -g -O2 -mmcu=? -o ?.elf ?.c
+simulavr -d ? -F ?.elf
+
+simulavr -d ? -F ?.elf -g
+simulavr -d ? ?.elf -g -P simulavr-disp -c 16000000
+avr-gdb
+	file ?.elf
+	target remote localhost:1212
+	load
+	step (stepi)
+
+avr-gcc -mmcu=? ?.c -o ?.o (elf)
+avr-objcopy -O ihex ?.o (elf) ?.hex
+
+avrdude -c ? (usbasp) -p ? -U flash:w:?.hex
+
+avr-gcc -I. -g -mmcu=? -Os -fpack-struct -fshort-enums -funsigned-bitfields -funsigned-char -Wall -Wstrict-prototypes -c ?.c
+avr-gcc -o ?.out (elf) ?.o

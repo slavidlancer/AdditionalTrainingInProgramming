@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "ArduInOscilloscopeOut", "ArduInOscilloscopeOut\ArduInOscilloscopeOut.vbproj", "{02E2DBB1-006B-437C-9350-D380EA093FE9}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "ArduInOscilloscopeOut v. 1.00a", "ArduInOscilloscopeOut v. 1.00a\ArduInOscilloscopeOut v. 1.00a.vdproj", "{55A54417-DDD1-4FBE-BF08-F5937BFDB62B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|Mixed Platforms = Release|Mixed Platforms
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{02E2DBB1-006B-437C-9350-D380EA093FE9}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{02E2DBB1-006B-437C-9350-D380EA093FE9}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{02E2DBB1-006B-437C-9350-D380EA093FE9}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{02E2DBB1-006B-437C-9350-D380EA093FE9}.Debug|x86.ActiveCfg = Debug|x86
+		{02E2DBB1-006B-437C-9350-D380EA093FE9}.Debug|x86.Build.0 = Debug|x86
+		{02E2DBB1-006B-437C-9350-D380EA093FE9}.Release|Any CPU.ActiveCfg = Release|x86
+		{02E2DBB1-006B-437C-9350-D380EA093FE9}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{02E2DBB1-006B-437C-9350-D380EA093FE9}.Release|Mixed Platforms.Build.0 = Release|x86
+		{02E2DBB1-006B-437C-9350-D380EA093FE9}.Release|x86.ActiveCfg = Release|x86
+		{02E2DBB1-006B-437C-9350-D380EA093FE9}.Release|x86.Build.0 = Release|x86
+		{55A54417-DDD1-4FBE-BF08-F5937BFDB62B}.Debug|Any CPU.ActiveCfg = Debug
+		{55A54417-DDD1-4FBE-BF08-F5937BFDB62B}.Debug|Mixed Platforms.ActiveCfg = Debug
+		{55A54417-DDD1-4FBE-BF08-F5937BFDB62B}.Debug|x86.ActiveCfg = Debug
+		{55A54417-DDD1-4FBE-BF08-F5937BFDB62B}.Release|Any CPU.ActiveCfg = Release
+		{55A54417-DDD1-4FBE-BF08-F5937BFDB62B}.Release|Mixed Platforms.ActiveCfg = Release
+		{55A54417-DDD1-4FBE-BF08-F5937BFDB62B}.Release|x86.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

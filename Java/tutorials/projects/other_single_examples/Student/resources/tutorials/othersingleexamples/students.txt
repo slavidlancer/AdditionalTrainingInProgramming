@@ -1,0 +1,4 @@
+name01 | second_name01 check | course01
+name02|second_name02|course01
+name03 | second_name03| course02
+name04|second_name04|course03

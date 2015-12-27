@@ -1,0 +1,180 @@
+/* comment */
+body
+{
+background-color : #202020;
+color : #ffffff;
+}
+
+img
+{
+outline-style : outset;
+outline-color : #505050;
+float : none;
+clear : both;
+}
+
+table
+{
+border-collapse : collapse;
+/*border-style : dotted solid double dashed;*/
+width : 100%;
+cursor : text;
+}
+
+th
+{
+padding : 15px;
+}
+
+td
+{
+vertical-align : bottom;
+}
+
+th, td
+{
+height : 50px;
+}
+
+table, th, td
+{
+border : 1px solid black;
+border-color : #ffffff;
+}
+
+p
+{
+background-color : #808080;
+color : #ffffff;
+font-family : Arial;
+font-size : 1em;
+text-align : left;
+margin-left : 50px;
+margin-right : 50px;
+}
+
+p.center
+{
+font-family : Arial;
+text-align : center;
+}
+
+p.lc
+{
+text-indent : 50px;
+text-transform : lowercase;
+}
+
+h1
+{
+font-family : Arial;
+outline-style : dashed;
+outline-color : #000000;
+position : absolute;
+left : 50px;
+top : 20px;
+z-index : -1;
+}
+
+h2
+{
+font-family : Arial serif;
+font-style : italic;
+outline-style : dotted;
+outline-color : #000000;
+position : relative;
+top : 50px;
+z-index : 0;
+}
+
+h3
+{
+font-family : Arial sans-serif;
+outline-style : solid;
+outline-color : #000000;
+position : relative;
+top : 20px;
+z-index : 1;
+}
+
+h4
+{
+border : solid;
+margin : 30px;
+margin-right : 85%;
+padding-left : 15px;
+padding-bottom : 15px;
+border-radius : 20px;
+text-shadow : 4px 4px 4px #995511;
+}
+
+#parameter
+{
+background-color : #000000;
+color : #808080;
+font-family : Arial;
+font-size : 2em;
+}
+
+a:link
+{
+font-family : Arial;
+color : #ffffff;
+text-decoration : none;
+}
+
+a.link:hover
+{
+color : #ff0055;
+}
+
+a:visited
+{
+font-family : Arial;
+color : #ffffff;
+text-decoration : none;
+}
+
+a:hover
+{
+font-family : Arial;
+color : #505050;
+text-decoration : underline;
+}
+
+a:active
+{
+font-family : Arial;
+color : #000000;
+text-decoration : underline;
+}
+
+ul
+{
+list-style-type : square;
+padding-left : 15px;
+margin : 20px;
+border : 1px solid black;
+outline-style : dotted;
+}
+
+ol
+{
+list-style-type : upper-roman;
+padding-left : 50px;
+display : block;
+}
+
+ol:first-line
+{
+color : #0abbaa;
+}
+
+input[type="text"]
+{
+background-color : #000000;
+color : #ffffff;
+display : block;
+resize : both;
+overflow : auto;
+}

@@ -1,0 +1,17 @@
+public class Car {
+	private String brand;
+	private String model;
+	private String productionYear;
+
+	public Car(String brand, String model, String productionYear){
+		this.brand = brand;
+		this.model = model;
+		this.productionYear = productionYear;
+	}
+
+	@Override
+	public String toString() {
+		return "<" + this.brand + "," + this.model + ","
+			+ this.productionYear + ">";
+	}
+}

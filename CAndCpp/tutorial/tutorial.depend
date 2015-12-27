@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1300541885 source:/home/slavi/Документи/tutorial/main.c
+	<stdio.h>
+	"lib.h"
+
+1300540919 source:/home/slavi/Документи/tutorial/lib.c
+	<string.h>
+
+1300535933 /home/slavi/Документи/tutorial/lib.h
+
+1300540587 source:/home/slavi/Документи/tutorial/file.c
+	<stdio.h>
+

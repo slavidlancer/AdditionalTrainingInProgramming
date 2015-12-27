@@ -1,0 +1,13 @@
+After the installation of ArduInOscilloscopeOut (brief instructions for using the application):
+
+1. Plug the Arduino Uno USB cable to the USB port of the computer.
+2. Run ArduInOscilloscopeOut.
+3. Select File -> Connect (Ctrl+N).
+4. Select the COM port of the connected Arduino Uno board (typically the last port in the list).
+5. Select the desired baud rate (currently baud rate 57600 is used, as in the StandardFirmata sketch).
+6. Click on Connect (Enter).
+
+- If the connection is established the values of the analog/digital pins should be updated and shown (visualization), the functionalities of the application should be available.
+- To disconnect the application from the Arduino Uno select File -> Disconnect (Ctrl+W).
+- To close the application select File -> Exit (Ctrl+Q).
+- If somehow, someway the Arduino Uno USB cable is disconnected or the connection disappear - there should be an error message, if there is an attempt to reconnect - error and exit of the application, recommended - close the application and unplug/plug again the USB cable, and start again.

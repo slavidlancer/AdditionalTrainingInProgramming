@@ -1,0 +1,151 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>title</title>
+<link rel="stylesheet" type="text/css" href="style2.css">
+<script type="text/javascript">
+/*function getCookie(c_name)
+{
+	var i,x,y,ARRcookies=document.cookie.split(";");
+
+	for(i=0;i<ARRcookies.length;i++)
+	{
+		x=ARRcookies[i].substr(0,ARRcookies[i].indexOf("="));
+		y=ARRcookies[i].substr(ARRcookies[i].indexOf("=")+1);
+		x=x.replace(/^\s+|\s+$/g,"");
+
+		if(x==c_name)
+		{
+			return unescape(y);
+		}
+	}
+}
+
+function setCookie(c_name,value,exdays)
+{
+	var exdate=new Date();
+	exdate.setDate(exdate.getDate()+exdays);
+	var c_value=escape(value)+((exdays==null)?"":"; expires="+exdate.toUTCString());
+
+	document.cookie=c_name+"="+c_value;
+}
+
+function checkCookie()
+{
+	var username=getCookie("username");
+
+	if((username!=null)&&(username!=""))
+	{
+		alert("Welcome again "+username);
+	}
+	else 
+	{
+		username=prompt("Please enter your name:","");
+
+		if ((username!=null)&&(username!=""))
+		{
+			setCookie("username",username,365);
+		}
+	}
+}*/
+
+function validateForm()
+{
+	var x=document.forms["form"]["fname"].value;
+
+	if((x==null)||(x==""))
+	{
+		alert("enter name");
+		return false;
+	}
+}
+
+function messageDelay()
+{
+	var t=setTimeout("alertMessage()",3000);
+}
+
+function alertMessage()
+{
+	alert("set");
+}
+
+/*function clearSet()
+{
+	clearTimeout(t);
+	alert("cleared set");
+}*/
+
+//personObj = new Object();
+
+function person(firstname,lastname)
+{
+	this.firstname=firstname;
+	this.lastname=lastname;
+	this.lastname2=lastname2;
+}
+
+function lastname2(last_name2)
+{
+	this.lastname=last_name2;
+}
+
+var person01=new person("fname","lname");
+
+function messageObject()
+{
+	alert(person01.firstname+" "+person01.lastname);
+}
+
+function messageObject2()
+{
+	person01.lastname2("lname2");
+	alert(person01.firstname+" "+person01.lastname);
+}
+
+function changeText(id)
+{
+	id.innerHTML="clicked";
+}
+</script>
+</head>
+<body onload="checkCookie()">
+<form name="form" action="check.php" onsubmit="return validateForm()" method="post">
+name:
+<input type="text" name="fname"/>
+<input type="button" value="set" onclick="messageDelay()"/>
+<input type="button" value="person01" onclick="messageObject()"/>
+<input type="button" value="change person01" onclick="messageObject2()"/>
+<input type="button" value="clear set"/>
+<input type="submit" value="check"/>
+</form>
+<h1>W3Schools Internal Note</h1>
+<div>
+<b>From:</b><input type="text" id="from"/><br/>
+<b>To:</b><input type="text" id="to"/><br/>
+<b>Message:</b><input type="text" id="message"/>
+</div>
+<script type="text/javascript">
+	if(window.XMLHttpRequest)
+	{
+		xmlhttp=new XMLHttpRequest();
+	}
+	xmlhttp.open("GET","demo.xml",false);
+	xmlhttp.send();
+	xmlDoc=xmlhttp.responseXML;
+	document.getElementById("from").innerHTML=xmlDoc.getElementsByTagName("from")[0].childNodes[0].nodeValue;
+	document.getElementById("to").innerHTML=xmlDoc.getElementsByTagName("to")[0].childNodes[0].nodeValue;
+	document.getElementById("message").innerHTML=xmlDoc.getElementsByTagName("message")[0].childNodes[0].nodeValue;
+	alert(getElementsByTagName("to")[0].childNodes[0].nodeValue);
+</script>
+<div class="h1class">
+<h1 onclick="this.style.color='#00dd00'" onmouseover="this.style.color='#000000'">click</h1>
+</div>
+<h2 onclick="changeText(this)">click here</h2>
+<br/>
+<a href="index01.html" title="menu01">index01.html</a>
+<a href="index02.html" title="menu02">index02.html</a>
+<a href="index03.html" title="menu03">index03.html</a>
+</body>
+</html>

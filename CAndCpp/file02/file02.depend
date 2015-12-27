@@ -1,0 +1,26 @@
+# depslib dependency file v1.0
+1302732942 source:/home/slavi/Документи/file02/main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"main.h"
+
+1302639558 /home/slavi/Документи/file02/functions.h
+
+1302634088 /home/slavi/Документи/file02/variables.h
+
+1302730377 source:/home/slavi/Документи/file02/functions.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"main.h"
+	"functions.h"
+
+1302732842 /home/slavi/Документи/file02/main.h
+
+1302634088 source:/home/slavi/Документи/file02/variables.c
+	<stdio.h>
+	"main.h"
+	"variables.h"
+	"functions.h"
+

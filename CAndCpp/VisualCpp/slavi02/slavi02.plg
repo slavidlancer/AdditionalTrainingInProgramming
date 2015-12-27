@@ -1,0 +1,35 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: slavi02 - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\Slavi\LOCALS~1\Temp\RSP391.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Debug/slavi02.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"D:\tasks\aiut_kump\bakalavar\IV\1\ppo\slavi02\slavi02Dlg.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Slavi\LOCALS~1\Temp\RSP391.tmp" 
+Creating command line "link.exe /nologo /subsystem:windows /incremental:yes /pdb:"Debug/slavi02.pdb" /debug /machine:I386 /out:"Debug/slavi02.exe" /pdbtype:sept  .\Debug\slavi02.obj .\Debug\slavi02Dlg.obj .\Debug\StdAfx.obj .\Debug\slavi02.res "
+<h3>Output Window</h3>
+Compiling...
+slavi02Dlg.cpp
+D:\tasks\aiut_kump\bakalavar\IV\1\ppo\slavi02\slavi02Dlg.cpp(73) : error C2509: 'DoDataExchange' : member function not declared in 'CSlavi02Dlg'
+        d:\tasks\aiut_kump\bakalavar\iv\1\ppo\slavi02\slavi02dlg.h(14) : see declaration of 'CSlavi02Dlg'
+D:\tasks\aiut_kump\bakalavar\IV\1\ppo\slavi02\slavi02Dlg.cpp(203) : error C2039: 'OnUpdateEdit1' : is not a member of 'CSlavi02Dlg'
+        d:\tasks\aiut_kump\bakalavar\iv\1\ppo\slavi02\slavi02dlg.h(14) : see declaration of 'CSlavi02Dlg'
+D:\tasks\aiut_kump\bakalavar\IV\1\ppo\slavi02\slavi02Dlg.cpp(211) : error C2065: 'm_edit' : undeclared identifier
+D:\tasks\aiut_kump\bakalavar\IV\1\ppo\slavi02\slavi02Dlg.cpp(211) : error C2440: '=' : cannot convert from 'char [19]' to 'int'
+        This conversion requires a reinterpret_cast, a C-style cast or function-style cast
+D:\tasks\aiut_kump\bakalavar\IV\1\ppo\slavi02\slavi02Dlg.cpp(212) : error C2065: 'UpdateData' : undeclared identifier
+Error executing cl.exe.
+
+
+
+<h3>Results</h3>
+slavi02.exe - 5 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

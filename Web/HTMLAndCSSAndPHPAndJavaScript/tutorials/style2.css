@@ -1,0 +1,132 @@
+body
+{
+background-image : url("img/back.png");
+background-repeat : norepeat;
+color : #ffffff;
+}
+
+img.web
+{
+width : 110px;
+height : 40px;
+background : url("img/w3schools.gif") 6px 5px;
+}
+
+a:link
+{
+font-family : Arial;
+color : #ffffff;
+text-decoration : none;
+}
+
+a:visited
+{
+font-family : Arial;
+color : #ffffff;
+text-decoration : none;
+}
+
+a:hover
+{
+font-family : Arial;
+color : #505050;
+text-decoration : underline;
+}
+
+a:active
+{
+font-family : Arial;
+color : #000000;
+text-decoration : underline;
+}
+
+ul
+{
+list-style-type : none;
+margin : 0;
+margin-right : 90%;
+padding : 0;
+outline-style : solid;
+border : 1px dotted #aabbcc;
+display : block;
+}
+
+ul.index
+{
+margin : 0;
+outline-style : solid;
+border : none;
+display : inline;
+}
+
+li
+{
+padding-left : 5%;
+}
+
+div.img:hover
+{
+-webkit-transform : rotate(5deg);
+}
+
+div.img
+{
+margin : 15px;
+border : 1px solid #0000ff;
+height : auto;
+width : auto;
+float : left;
+text-align : center;
+}
+
+div.img img
+{
+display : inline;
+margin : 3px;
+border : 1px solid #ffffff;
+}
+
+div.img a:hover img
+{
+border : 1px solid #0000ff;
+}
+
+div.desc
+{
+text-align : center;
+font-weight : normal;
+width : 120px;
+margin : 2px;
+}
+
+div.webd
+{
+display : block;
+margin : 1%;
+padding : 1%;
+float : left;
+clear : both;
+outline-style : outset;
+outline-color : #918203;
+-webkit-transform : rotate(5deg);
+}
+
+div.nonediv:hover
+{
+-webkit-transform : rotate(0deg);
+}
+
+div.nonediv
+{
+display : block;
+float : none;
+clear : both;
+}
+
+div.h1class
+{
+width : 50px;
+height : 20px;
+margin : 0;
+padding : 0;
+}
