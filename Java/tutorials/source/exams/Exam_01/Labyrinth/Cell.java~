@@ -1,5 +1,0 @@
-private class Cell {
-int row;
-int col;
-int distance;
-}
