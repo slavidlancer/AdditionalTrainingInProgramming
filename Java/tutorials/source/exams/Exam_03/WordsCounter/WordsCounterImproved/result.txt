@@ -1,4 +1,0 @@
-for - 3
-academy - 3
-student - 1
-develop - 3
