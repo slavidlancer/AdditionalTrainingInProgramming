@@ -8,7 +8,7 @@ public class RunnableDemo implements Runnable {
 	public RunnableDemo(String threadName) {
 		this.threadName = threadName;
 		
-		System.out.println("Creating " +  threadName );
+		System.out.println("Creating " + threadName );
 	}
 
 	@Override
@@ -28,12 +28,12 @@ public class RunnableDemo implements Runnable {
 				}
 			}
 		} catch (InterruptedException ie) {
-			System.out.println("Thread " +  threadName + " interrupted.");
+			System.out.println("Thread " + threadName + " interrupted.");
 		}
 	}
 	
 	public void start() {
-		System.out.println("Starting " +  threadName );
+		System.out.println("Starting " + threadName );
 	    
 		if (t == null) {
 			t = new Thread (this, threadName);
