@@ -2,7 +2,7 @@ package com.tutorials.algorithms.sorting;
 
 import java.util.Arrays;
 
-public class MergeSort {
+public class MergeSortOther {
     private static void sortByMergeSort(int[] arr, int first, int last) {
         if (first >= last) {
             return;
@@ -17,26 +17,22 @@ public class MergeSort {
     }
     
     private static void merge(int[] arr, int first, int last) {
-        int[] temp = new int[last - first + 1];
         int mid = (first + last) / 2;
         int i = first;
         int j = mid + 1;
-        int k = 0;
-        
-        while (i <= mid && j <= last) {
-            if (arr[i] < arr[j]) {
-                temp[k++] = arr[i++];
+        int size = last - first + 1;
+        int[] temp = new int[size];
+     
+        for (int k = 0; k < size; k++) {
+            if (i == mid + 1) {
+                temp[k] = arr[j++];
+            } else if (j == last + 1) {
+                temp[k] = arr[i++];
+            } else if (arr[i] < arr[j]) {
+                temp[k] = arr[i++];
             } else {
-                temp[k++] = arr[j++];
+                temp[k] = arr[j++];
             }
-        }
-        
-        while (i <= mid) {
-            temp[k++] = arr[i++];
-        }
-        
-        while (j <= last) {
-            temp[k++] = arr[j++];
         }
         
         for (i = first; i <= last; i++) {
