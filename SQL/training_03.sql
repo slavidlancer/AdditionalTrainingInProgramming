@@ -18,5 +18,5 @@ CREATE TABLE table_name (
     ColumnName1 int NOT NULL UNIQUE,
     ColumnName2 varchar(255)
     ColumnName3 varchar(255)
-    ColumnName4 
+    ColumnName4 float
 );
